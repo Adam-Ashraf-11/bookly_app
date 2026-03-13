@@ -17,8 +17,6 @@ class _SplashViewBodyState extends State<SplashViewBody> {
     super.initState();
   }
 
- 
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -38,16 +36,15 @@ class _SplashViewBodyState extends State<SplashViewBody> {
     );
   }
 
+  //*  navigatToHome Method
 
-//*  navigatToHome Method
-
-   void navigatToHome() {
-     Future.delayed(
-      Duration(seconds: 3),
+  void navigatToHome() {
+    Future.delayed(
+      Duration(seconds:2),
       () => Get.to(
         () => HomeView(),
         transition: Transition.fade,
-        duration: Duration(seconds: 2),
+        duration: Duration(seconds: 1),
       ),
     );
   }
