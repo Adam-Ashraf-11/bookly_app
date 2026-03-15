@@ -1,8 +1,8 @@
 import 'package:flutter/painting.dart';
 
 abstract class Styles {
-  static const titlMedium = TextStyle(
-    fontSize: 24,
+  static const textStyle18 = TextStyle(
+    fontSize: 18,
     fontWeight: FontWeight.w600,
   );
 }
