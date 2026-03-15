@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bookly_app/core/utils/styles.dart';
 import 'package:flutter_bookly_app/features/home/presentation/view/custom/custom_book_details_app_bar.dart';
 import 'package:flutter_bookly_app/features/home/presentation/view/custom/custom_book_image.dart';
+import 'package:flutter_bookly_app/features/home/presentation/view/widgets/book_rating.dart';
 
 class BookDetailsViewBody extends StatelessWidget {
   const BookDetailsViewBody({super.key});
@@ -25,6 +26,8 @@ class BookDetailsViewBody extends StatelessWidget {
             opacity: .7,
             child: Text("Rudyard Kipling", style: Styles.textStyle18),
           ),
+          SizedBox(height: 4,),
+          BookRating( mainAxisAlignment: MainAxisAlignment.center,),
         ],
       ),
     );
