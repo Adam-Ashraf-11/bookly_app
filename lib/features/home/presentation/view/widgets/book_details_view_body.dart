@@ -1,10 +1,32 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bookly_app/core/utils/styles.dart';
+import 'package:flutter_bookly_app/features/home/presentation/view/custom/custom_book_details_app_bar.dart';
+import 'package:flutter_bookly_app/features/home/presentation/view/custom/custom_book_image.dart';
 
 class BookDetailsViewBody extends StatelessWidget {
   const BookDetailsViewBody({super.key});
-
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    var width = MediaQuery.sizeOf(context).width;
+
+    return Scaffold(
+      body: Column(
+        children: [
+          CustomBookDetailsAppbar(),
+          SizedBox(height: 10),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: width * .27),
+            child: AspectRatio(aspectRatio: 2 / 3, child: CustomBookImage()),
+          ),
+          SizedBox(height: 20),
+          Text("THe Jungle Book", style: Styles.textStyle30),
+          SizedBox(height: 6),
+          Opacity(
+            opacity: .7,
+            child: Text("Rudyard Kipling", style: Styles.textStyle18),
+          ),
+        ],
+      ),
+    );
   }
 }

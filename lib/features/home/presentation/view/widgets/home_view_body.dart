@@ -12,7 +12,7 @@ class HomeViewBody extends StatelessWidget {
     return CustomScrollView(
       slivers: [
         SliverToBoxAdapter(
-          child:   Column(
+          child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               const CustomAppbar(),
@@ -23,8 +23,7 @@ class HomeViewBody extends StatelessWidget {
             ],
           ),
         ),
-      const  BestSallerSliverList()
-        
+        const BestSallerSliverList(),
       ],
     );
   }
