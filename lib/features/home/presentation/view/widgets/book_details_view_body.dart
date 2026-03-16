@@ -1,38 +1,28 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bookly_app/core/utils/styles.dart';
 import 'package:flutter_bookly_app/features/home/presentation/view/custom/custom_book_details_app_bar.dart';
-import 'package:flutter_bookly_app/features/home/presentation/view/custom/custom_book_image.dart';
-import 'package:flutter_bookly_app/features/home/presentation/view/widgets/book_button.dart';
-import 'package:flutter_bookly_app/features/home/presentation/view/widgets/book_rating.dart';
+import 'package:flutter_bookly_app/features/home/presentation/view/widgets/books_bottom_section.dart';
+import 'package:flutter_bookly_app/features/home/presentation/view/widgets/books_details_section.dart';
 
 class BookDetailsViewBody extends StatelessWidget {
   const BookDetailsViewBody({super.key});
   @override
   Widget build(BuildContext context) {
-    var width = MediaQuery.sizeOf(context).width;
-
-    return Scaffold(
-      body: Column(
-        children: [
-          CustomBookDetailsAppbar(),
-          SizedBox(height: 10),
-          Padding(
-            padding: EdgeInsets.symmetric(horizontal: width * .27),
-            child: AspectRatio(aspectRatio: 2 / 3, child: CustomBookImage()),
+    return CustomScrollView(
+      slivers: [
+        SliverFillRemaining(
+          hasScrollBody: false,
+          child: Column(
+            children: [
+              CustomBookDetailsAppbar(),
+              SizedBox(height: 10),
+              BooksDetailsSection(),
+              Expanded(child: SizedBox(height: 50)),
+              BooksBottomSection(),
+              SizedBox(height: 40),
+            ],
           ),
-          SizedBox(height: 20),
-          Text("THe Jungle Book", style: Styles.textStyle30),
-          SizedBox(height: 6),
-          Opacity(
-            opacity: .7,
-            child: Text("Rudyard Kipling", style: Styles.textStyle18),
-          ),
-          SizedBox(height: 4),
-          BookRating(mainAxisAlignment: MainAxisAlignment.center),
-          BooksButton(),
-        ],
-      ),
+        ),
+      ],
     );
   }
 }
-
