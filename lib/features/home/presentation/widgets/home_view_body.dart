@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bookly_app/core/utils/styles.dart';
-import 'package:flutter_bookly_app/features/home/presentation/view/custom/custom_appBar.dart';
-import 'package:flutter_bookly_app/features/home/presentation/view/widgets/best_seller_sliver_list.dart';
-import 'package:flutter_bookly_app/features/home/presentation/view/widgets/featured_listviewBuilder.dart';
+import 'package:flutter_bookly_app/features/home/presentation/custom/custom_appBar.dart';
+import 'package:flutter_bookly_app/features/home/presentation/widgets/best_seller_sliver_list.dart';
+import 'package:flutter_bookly_app/features/home/presentation/widgets/featured_listviewBuilder.dart';
 
 class HomeViewBody extends StatelessWidget {
   const HomeViewBody({super.key});

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bookly_app/features/home/presentation/view/custom/custom_book_image.dart';
+import 'package:flutter_bookly_app/features/home/presentation/custom/custom_book_image.dart';
 
 class BookDetailsBottomList extends StatelessWidget {
   const BookDetailsBottomList({super.key});

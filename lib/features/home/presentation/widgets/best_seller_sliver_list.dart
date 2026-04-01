@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bookly_app/features/home/presentation/view/custom/custom_bestsellesr_item.dart';
+import 'package:flutter_bookly_app/features/home/presentation/custom/custom_bestsellesr_item.dart';
 
 class BestSallerSliverList extends StatelessWidget {
   const BestSallerSliverList({super.key});

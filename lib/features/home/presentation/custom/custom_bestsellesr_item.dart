@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bookly_app/core/utils/app_router.dart';
 import 'package:flutter_bookly_app/core/utils/assets.dart';
 import 'package:flutter_bookly_app/core/utils/styles.dart';
-import 'package:flutter_bookly_app/features/home/presentation/view/widgets/book_rating.dart';
+import 'package:flutter_bookly_app/features/home/presentation/widgets/book_rating.dart';
 import 'package:go_router/go_router.dart';
 
 class BestSellesrItem extends StatelessWidget {
@@ -11,7 +11,7 @@ class BestSellesrItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap:(){
+      onTap: () {
         GoRouter.of(context).push(AppRouter.kBookDetailsView);
       },
       child: Padding(
@@ -61,4 +61,3 @@ class BestSellesrItem extends StatelessWidget {
     );
   }
 }
-

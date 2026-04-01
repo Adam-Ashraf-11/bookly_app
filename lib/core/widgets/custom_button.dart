@@ -2,23 +2,29 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bookly_app/core/utils/styles.dart';
 
 class CustomButton extends StatelessWidget {
-  const CustomButton({super.key, required this.title, required this.buttonColor,  this.borderRadius, required this.titleColor});
- final String title ;
+  const CustomButton({
+    super.key,
+    required this.title,
+    required this.buttonColor,
+    this.borderRadius,
+    required this.titleColor,
+  });
+  final String title;
 
- final Color buttonColor ;
- final Color titleColor ;
- final BorderRadius? borderRadius ;
+  final Color buttonColor;
+  final Color titleColor;
+  final BorderRadius? borderRadius;
   @override
   Widget build(BuildContext context) {
     return SizedBox(
       height: 45,
-         child: TextButton(
+      child: TextButton(
         onPressed: () {},
         style: TextButton.styleFrom(
           backgroundColor: buttonColor,
           shape: RoundedRectangleBorder(
-            borderRadius: borderRadius ?? BorderRadius.circular(16)
-          )
+            borderRadius: borderRadius ?? BorderRadius.circular(16),
+          ),
         ),
         child: Text(
           title,
@@ -28,4 +34,3 @@ class CustomButton extends StatelessWidget {
     );
   }
 }
-

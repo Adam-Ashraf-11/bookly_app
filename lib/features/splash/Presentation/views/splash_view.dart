@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bookly_app/features/splash/Presentation/views/widget/splash_view_body.dart';
+import 'package:flutter_bookly_app/features/splash/Presentation/widget/splash_view_body.dart';
 
 class SplashView extends StatelessWidget {
   const SplashView({super.key});
@@ -9,6 +9,6 @@ class SplashView extends StatelessWidget {
     return const Scaffold(
       backgroundColor: Color(0xff100B20),
       body: SplashViewBody(),
-      );
+    );
   }
 }

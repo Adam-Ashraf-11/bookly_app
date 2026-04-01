@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bookly_app/core/utils/styles.dart';
-import 'package:flutter_bookly_app/features/home/presentation/view/widgets/book_details_bottom_list.dart';
+import 'package:flutter_bookly_app/features/home/presentation/widgets/book_details_bottom_list.dart';
 
 class BooksBottomSection extends StatelessWidget {
   const BooksBottomSection({super.key});

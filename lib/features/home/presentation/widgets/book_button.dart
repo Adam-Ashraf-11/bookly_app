@@ -7,7 +7,7 @@ class BooksButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 35 , right: 35, top: 18),
+      padding: const EdgeInsets.only(left: 35, right: 35, top: 18),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -18,7 +18,8 @@ class BooksButton extends StatelessWidget {
               borderRadius: BorderRadius.only(
                 topLeft: Radius.circular(16),
                 bottomLeft: Radius.circular(16),
-              ), titleColor: Colors.black,
+              ),
+              titleColor: Colors.black,
             ),
           ),
           Expanded(
@@ -28,7 +29,8 @@ class BooksButton extends StatelessWidget {
               borderRadius: BorderRadius.only(
                 topRight: Radius.circular(16),
                 bottomRight: Radius.circular(16),
-              ), titleColor: Colors.white,
+              ),
+              titleColor: Colors.white,
             ),
           ),
         ],

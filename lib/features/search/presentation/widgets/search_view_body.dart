@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bookly_app/core/utils/styles.dart';
-import 'package:flutter_bookly_app/features/home/presentation/view/widgets/best_seller_sliver_list.dart';
-import 'package:flutter_bookly_app/features/search/presentation/view/widgets/custom_text_field_search.dart';
+import 'package:flutter_bookly_app/features/home/presentation/widgets/best_seller_sliver_list.dart';
+import 'package:flutter_bookly_app/features/search/presentation/widgets/custom_text_field_search.dart';
 
 class SearchViewBody extends StatelessWidget {
   const SearchViewBody({super.key});
@@ -25,7 +25,6 @@ class SearchViewBody extends StatelessWidget {
           ),
         ),
         BestSallerSliverList(),
-        // هنا يمكنك إضافة الـ slivers الأخرى مثل SliverList
       ],
     );
   }
