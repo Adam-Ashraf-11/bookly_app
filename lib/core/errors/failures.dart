@@ -2,13 +2,12 @@ import 'package:dio/dio.dart';
 
 abstract class Failures {
   final String? errormessage;
-
   Failures(this.errormessage);
 }
 
+
 class ServerFailure extends Failures {
   ServerFailure(super.errormessage);
-
   factory ServerFailure.fromDioException(DioException dioException) {
     switch (dioException.type) {
       case DioExceptionType.connectionTimeout:
@@ -33,9 +32,11 @@ class ServerFailure extends Failures {
       case DioExceptionType.unknown:
         if (dioException.message!.contains('SocketException')) {
           return ServerFailure('No Internet Connection');
-        } {}
+        } 
         return ServerFailure('Unexpected Error');
-        default: return ServerFailure('Opps There was an Error, please try later!');
+        
+        default:
+         return ServerFailure('Opps There was an Error, please try later!');
     }
   }
 

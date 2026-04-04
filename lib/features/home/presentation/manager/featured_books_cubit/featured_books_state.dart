@@ -11,11 +11,18 @@ final class FeaturedBooksInitial extends FeaturedBooksState {}
 
 final class FeaturedBooksLoading extends FeaturedBooksState {}
 
-final class FeaturedBooksSuccess extends FeaturedBooksState {}
+final class FeaturedBooksSuccess extends FeaturedBooksState {
+
+  final List <BookModel> book ;
+
+ const FeaturedBooksSuccess(this.book);
+
+  
+}
 
 final class FeaturedBooksfailure extends FeaturedBooksState {
 
   final String errorMessage ;
 
-  FeaturedBooksfailure(this.errorMessage);
+  const FeaturedBooksfailure(this.errorMessage);
 }

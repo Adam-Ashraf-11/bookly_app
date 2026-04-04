@@ -15,7 +15,6 @@ class HomeRepoImpl implements HomeRepo {
       var data = await apiService.get(
         endPoint: 'volumes?q=subject:programming&sorting=newest',
       );
-
       List<BookModel> books = [];
       for (var item in data['items']) {
         books.add(BookModel.fromJson(item));
@@ -28,7 +27,6 @@ class HomeRepoImpl implements HomeRepo {
       return left(ServerFailure(e.toString()));
     }
   }
-
   @override
   Future<Either<Failures, List<BookModel>>> fetchFeaturedBooks() async {
     try {
