@@ -24,7 +24,7 @@ class SearchViewBody extends StatelessWidget {
             ),
           ),
         ),
-        BestSallerSliverList(),
+        NewestBooksrSliverList(),
       ],
     );
   }

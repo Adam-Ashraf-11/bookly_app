@@ -23,7 +23,7 @@ class HomeViewBody extends StatelessWidget {
             ],
           ),
         ),
-        const BestSallerSliverList(),
+        const NewestBooksrSliverList(),
       ],
     );
   }
